@@ -1,9 +1,9 @@
-const { Products, Categories } = require("./database/models");
+const {Products, Categories} = require('./database/models');
 
 module.exports = {
-  async findAllProducts(limit, offset) {
+  findAllProducts(limit, offset) {
     const productsPromise = Products.findAll({
-      include: { model: Categories, attributes: ["name"] },
+      include: {model: Categories, attributes: ['name']},
       limit,
       offset,
     });
@@ -11,6 +11,6 @@ module.exports = {
     return Promise.all([
       productsPromise,
       totalPromise,
-    ]).then(([products, total]) => ({ rows: products, total }));
+    ]).then(([products, total]) => ({rows: products, total}));
   },
 };
