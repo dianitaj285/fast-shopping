@@ -1,0 +1,21 @@
+{
+  "name": "fast-shopping-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.6",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "prettier": "^2.1.2",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "migrate": "sequelize-cli db:migrate",
+    "rollback": "sequelize-cli db:migrate:undo",
+    "rollback-all": "sequelize-cli db:migrate:undo:all",
+    "seed": "sequelize-cli db:seed:all"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "davidsttivend",
+    "password": "postgres",
+    "database": "fastShopping",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "davidsttivend",
+    "password": "postgres",
+    "database": "fastShopping",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "davidsttivend",
+    "password": "postgres",
+    "database": "fastShopping",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
